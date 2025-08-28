@@ -26,7 +26,5 @@ def personal_info_manager():
             break
         else:
             print("Something Is Wrong Pls Try Again...")
-
-
 if __name__ == "__main__":
     personal_info_manager()
