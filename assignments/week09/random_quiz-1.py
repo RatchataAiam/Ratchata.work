@@ -25,3 +25,24 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+import random
+def Rnumber():
+    random_number=random.randint(1,20)
+    MG=8
+    for i in range(1,MG):
+        if i==7:
+            print(f"Random number is {random_number}")
+            print("You ran out of Attempt! :(")
+            break
+        GN=int(input("Enter Your Guess: "))
+        if GN>random_number:
+            print("Too high! Try again.")
+        elif GN<random_number:
+            print("Too low! Try again.")
+        elif GN==random_number:
+            print(f"Congratulations! You Won in {i} attempts")
+            print(f"Random number is {random_number}")
+            break
+
+Rnumber()
+""
